@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="Content-Security-Policy" content="default-src 'none'; script-src 'self' https://cdn.jsdelivr.net https://cdnjs.cloudflare.com; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src https://fonts.gstatic.com; img-src 'self' data: blob: https://dvkxpkxvknfxyefoqlfp.supabase.co; connect-src https://dvkxpkxvknfxyefoqlfp.supabase.co wss://dvkxpkxvknfxyefoqlfp.supabase.co; frame-src https://www.youtube-nocookie.com https://maps.google.com https://www.google.com; base-uri 'none'; form-action 'none'; object-src 'none'">
+<meta name="referrer" content="strict-origin-when-cross-origin">
+<meta name="description" content="">
+<title>Tienda</title>
+<style>
+body{margin:0;font-family:system-ui,sans-serif}
+.loading{padding:40px 20px;text-align:center;opacity:.7}
+.paused{background:#222;color:#fff;text-align:center;padding:10px;font-weight:600}
+.shh{display:flex;justify-content:space-between;align-items:center;gap:10px;margin-bottom:8px}
+.shh b{font-size:18px}.shh button{border:0;background:none;font-size:20px;cursor:pointer}
+.shimg{width:100%;border-radius:10px;margin:6px 0}
+.sh fieldset{border:0;padding:0;margin:10px 0}.sh legend{font-weight:700;margin-bottom:4px}
+.opt{display:flex;gap:8px;align-items:center;padding:6px 0}.opt input{width:auto;margin:0}
+.fl{display:block;font-size:13px;font-weight:600;margin-top:6px}
+.muted{font-size:13px;opacity:.75}.err{color:#c62828;font-weight:600;min-height:1em}
+a.go,button.go{display:block;width:100%;text-align:center;text-decoration:none;margin-top:8px}
+button.go:disabled{opacity:.5}
+footer.legal a{margin:0 4px}
+</style>
+<script src="config.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2.45.4/dist/umd/supabase.js" integrity="sha384-0w2KAL2YHP6wKOkUDzkCDGgVvfmHnj02DHeQ6XcHOgTfFsGyonKOpShMH1x6nk9o" crossorigin="anonymous"></script>
+<script src="js/shared.js"></script>
+</head>
+<body>
+<main id="app"><p class="loading">Cargando tienda…</p></main>
+<script src="js/store.js"></script>
+</body>
+</html>
